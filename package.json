@@ -1,0 +1,12 @@
+{
+  "name": "Metropoly",
+  "description": "Metropoly Multiplayer",
+  "dependencies": {
+    "connect-redis": "^2.1.0",
+    "express": "^4.9.4",
+    "express-session": "^1.8.2",
+    "socket.io": "^1.1.0",
+    "underscore": "^1.7.0",
+    "uuid": "^1.4.1"
+  }
+}

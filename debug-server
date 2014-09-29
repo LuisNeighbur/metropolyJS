@@ -1,0 +1,2 @@
+supervisor --debug -i app/views,public server
+node-inspector

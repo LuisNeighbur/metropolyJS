@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Metropoly Multiplayer</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+	<script src="/js/jquery-1.11.1.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/underscore-min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="/js/metropoly.js"></script>
+	<style>
+	body{
+		background-color: black;
+	}
+	#rooms,#players{
+		height: 200px;
+		border: 1px solid white;
+	}
+	.no-padding{
+		padding: 0;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-3 no-padding" id="left">
+				<input type="button" id="create_room" class="btn btn-default" value="Crear Sala" />
+				<input type="button" id="leave_room" class="btn btn-default" disabled="disabled" value="Dejar la sala">
+				<div id="rooms">
+					<ul class="list-unstyled"></ul>
+				</div>
+				<div id="players">
+					
+				</div>
+			</div>
+			<div class="col-xs-8 no-padding">
+				<canvas id="tablero" width="575" height="575"></canvas>
+			</div>
+		</div>
+	</div>
+	<script>iniciar();</script>
+</body>
+</html>
